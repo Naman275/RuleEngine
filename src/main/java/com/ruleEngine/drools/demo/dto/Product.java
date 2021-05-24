@@ -7,7 +7,15 @@ public class Product {
     private String item;
     private Integer cost;
     private String customerType;
-    private Integer available;
+    private Integer quantity;
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 
     public String getItem() {
         return item;
@@ -33,11 +41,4 @@ public class Product {
         this.customerType = customerType;
     }
 
-    public Integer getAvailable() {
-        return available;
-    }
-
-    public void setAvailable(Integer available) {
-        this.available = available;
-    }
 }

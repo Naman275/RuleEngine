@@ -2,14 +2,14 @@ import com.ruleEngine.drools.demo.dto.*;
 
 rule "If customer type is regular and quantity [76-100] , Set Price as 10"
 when
-    $product:Product(item=='apple' && customerType=='regular' && available>=76 && available<=100)
+    $product:Product(item=='apple' && customerType=='regular' && quantity>=76 && quantity<=100)
 then
     $product.setCost(10);
 end
 
 rule "If customer type is premium and quantity [76-100] , Set Price as 8"
 when
-    $product:Product(item=='apple' && customerType=='premium' && available>=76 && available<=100)
+    $product:Product(item=='apple' && customerType=='premium' && quantity>=76 && quantity<=100)
 then
     $product.setCost(8);
 end
@@ -17,7 +17,7 @@ end
 
 rule "If customer type is regular and quantity [51-75] , Set Price as 12"
 when
-    $product:Product(item=='apple' && customerType=='regular' && available>=51 && available<=75)
+    $product:Product(item=='apple' && customerType=='regular' && quantity>=51 && quantity<=75)
 then
     $product.setCost(12);
 end
@@ -25,7 +25,7 @@ end
 
 rule "If customer type is premium and quantity [51-75] , Set Price as 10"
 when
-    $product:Product(item=='apple' && customerType=='premium' && available>=51 && available<=75)
+    $product:Product(item=='apple' && customerType=='premium' && quantity>=51 && quantity<=75)
 then
     $product.setCost(10);
 end
@@ -33,7 +33,7 @@ end
 
 rule "If customer type is regular and quantity [1-50] , Set Price as 14"
 when
-    $product:Product(item=='apple' && customerType=='regular' && available>=1 && available<=50)
+    $product:Product(item=='apple' && customerType=='regular' && quantity>=1 && quantity<=50)
 then
     $product.setCost(14);
 end
@@ -41,7 +41,7 @@ end
 
 rule "If customer type is premium and quantity [1-50] , Set Price as 11"
 when
-    $product:Product(item=='apple' && customerType=='premium' && available>=1 && available<=50)
+    $product:Product(item=='apple' && customerType=='premium' && quantity>=1 && quantity<=50)
 then
     $product.setCost(11);
 end
