@@ -1,5 +1,5 @@
 # Rule Engine
-![Alt Text](engine.gif)
+![Alt Text](engineLogo.gif)
 
 <h3><b>Drools:</b></h3>
 Drools is a business rule management system. Let's suppose you want to separate business logic from the code. In case we want to avoid rebuild and redeploy our application but without taking any downtime or rebuild the entire application then in that case we can make use of some business rule management
