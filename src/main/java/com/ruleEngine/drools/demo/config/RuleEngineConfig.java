@@ -25,12 +25,12 @@ public class RuleEngineConfig {
         return rulesFired;
     }
 
-    private synchronized KieSession configStateful(byte[] fileArray) throws IOException {
+    private  KieSession configStateful(byte[] fileArray) throws IOException {
         KieBase kieBase = createKieBase(fileArray);
         return kieBase.newKieSession();
     }
 
-    private synchronized KieBase createKieBase(byte[] fileArray){
+    private KieBase createKieBase(byte[] fileArray){
         KieServices kieServices = KieServices.Factory.get();
         KieFileSystem kieFileSystem=kieServices.newKieFileSystem();
         Resource resource= ResourceFactory.newByteArrayResource(fileArray);
